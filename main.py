@@ -20,6 +20,10 @@ def mp4_to_gif(mp4_path, gif_path, start_time=0, end_time=None, fps=10):
     clip.write_gif(gif_path, fps=fps)
     print(f"GIF saved to {gif_path}")
 
+    """
+    - insert the file path of your mp4 file and name the output .gif file and if you want the output path. 
+    - By default it will create it inside your repository directory
+    - Choose your custom parameters 
+    """
 
-# Usage
-mp4_to_gif("bug.mp4", "bug.gif", start_time=15, end_time=28, fps=15)
+mp4_to_gif("input.mp4", "output.gif", start_time=15, end_time=28, fps=15)
